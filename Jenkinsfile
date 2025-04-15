@@ -1,6 +1,12 @@
 pipeline {
 agent any
 stages {
+	agent any
+	
+	tools{
+		maven 'Maven-Autoinstalado'
+	}
+	
 	stage('Compilación') {
 		steps {
 			echo 'Compilando el proyecto.--'
